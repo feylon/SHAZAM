@@ -1,3 +1,29 @@
-nav{
-    
+.box{
+    width: 1300px;
+    margin: auto auto;
+}
+.home_nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .join_discord{
+        width: 130px;
+        height: 40px;
+        background-color: #2685dd;
+        cursor: pointer;
+        border: 1px #2685dd solid;
+        border-radius: 15px;
+        color:white;
+        font-weight: 600; 
+        transition: 0.2s all ease;
+        &:hover{
+            background-color: #f3fff3;
+            color:#2685dd;
+
+        }
+    }
+    .pricing{
+        
+    }
 }
