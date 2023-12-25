@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <nav class="home_nav">
-        <div class="shazam_header">
+        <div class="shazam_header ">
             Shazam
         </div>
         <div class="right_nav">
@@ -25,7 +25,13 @@
 
 <div class="searchsection">
 
-  <input type="text" class="search_song">
+  <input type="text" placeholder="Search for a song..."  class="search_song form-control mt-3 w-75 m-auto mt-3">
+</div>
+
+<div class="recent_section">
+ <span class="recent mt-4">
+  <i class="fas fa-arrow-rotate-left"></i> Recent searches
+ </span>
 </div>
     </div>
   </div>
