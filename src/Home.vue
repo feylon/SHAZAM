@@ -1,17 +1,20 @@
 <template>
   <div class="box">
     <nav class="home_nav">
-        <h3>
+        <div class="shazam_header">
             Shazam
-        </h3>
+        </div>
         <div class="right_nav">
             <p class="pricing">
                 Pricing
             </p>
-            <button class="join_discord"> Join Discord</button>
-            <button class="login">Login</button>
+            <button class="join_discord"><i class="fab fa-discord"></i> Join Discord</button>
+            <button class="login_nav"><i class="fas fa-right-to-bracket"></i> Login </button>
         </div>
     </nav>
+    
+
+    
   </div>
 </template>
 <script></script>
