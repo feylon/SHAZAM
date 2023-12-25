@@ -14,7 +14,20 @@
     </nav>
     
 
-    
+    <div class="box_section">
+<span class="discover_music">
+  Discover music you'll love.
+
+</span>
+<span class="Search_for_a_song">
+  Search for a song, get recommendations with similar vibes.
+</span>
+
+<div class="searchsection">
+
+  <input type="text" class="search_song">
+</div>
+    </div>
   </div>
 </template>
 <script></script>
