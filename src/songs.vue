@@ -27,10 +27,26 @@
                     Lost
             </div>
        
-
+            
                 <div class="h6 mt-4 text-center">Lost sky visioun</div>
-               </div>
-               <div class="col-8">3</div>
+             
+                <div class="play_icon_header">
+                    <i class="fas fa-circle-play" title="Play"></i>
+                    <i class="fas fa-circle-pause d-none"></i>
+                </div>
+            </div>
+               <div class="col-8 right_menu">
+                <div class="p3 Recommended">Recommended</div>
+                <span class="foavvoruiter">
+                Songs you like will be saved to your Favorites page.
+
+</span>
+
+<div class="buttons d-flex justify-content-around mt-2 w-50 align-items-center">
+    <button class="save_playlist p-2    "><i class="fas fa-music"></i> Save Playlist</button>
+    <button class="auto_play p-2"><i class="fas fa-play"></i> Auto play all songs</button>
+</div>
+            </div>
        
        
            </div>

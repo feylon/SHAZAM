@@ -1,5 +1,6 @@
 // o'zgaruvchilar
 $backcolor: #F2F3F5;
+$backcolor1:#E0F2FE;
 // *o'zgaruvchilar
 .content{
     .content_left{
@@ -17,6 +18,41 @@ $backcolor: #F2F3F5;
 
     
             }
+        }
+
+        .play_icon_header{
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            
+        }
+    }
+    .right_menu{
+        .Recommended{
+            font-size: 21px;
+            font-weight: 600;
+        }
+        .foavvoruiter{
+            font-size: 13px;
+            color: gray;
+        }
+        .save_playlist{
+            background-color: $backcolor1;
+            border-radius: 10px;
+            border: $backcolor1 1px solid;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.5s all ease;
+            &:hover{
+                background-color: #94d6f7;
+            }
+        }
+        .auto_play{
+            border-radius: 10px;
+            border:none;
+            font-size: 13px;
+            font-weight: 600;
+            // justify-content: ;
         }
     }
    
