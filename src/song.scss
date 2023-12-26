@@ -54,6 +54,29 @@ $backcolor1:#E0F2FE;
             font-weight: 600;
             // justify-content: ;
         }
+        .item{
+           cursor: pointer;
+            height: 60px;
+            // background-color: red;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #F9FAFB;
+            }
+          .fa-circle-play{
+            font-size: 28px;
+          } 
+          .music_details{
+            display: flex;
+            flex-direction: column;
+            .artist{
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .title{
+                font-size: 13px;
+            }
+          } 
+        }
     }
    
 }

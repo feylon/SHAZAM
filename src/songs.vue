@@ -17,7 +17,7 @@
        
        
            <div class="content mt-3 row d-flex flex-wrap">
-               <div class="col-4 content_left">
+               <div class="col-4 content_left pb-5">
        
                    <div class="img d-flex justify-content-center w-100">
                    <img src="../vaqtincha/2. Хаски.jpg" class="img-fluid" alt="">
@@ -46,6 +46,24 @@
     <button class="save_playlist p-2    "><i class="fas fa-music"></i> Save Playlist</button>
     <button class="auto_play p-2"><i class="fas fa-play"></i> Auto play all songs</button>
 </div>
+
+    <div class="music_list w-100">
+        <div class="item d-flex align-items-center">
+            <div class="w-50 d-flex align-items-center ps-2 pt-3 pb-3  justify-content-start">
+                <i class="fas fa-circle-play me-3" title="Play"></i>
+            <div class="music_details ">
+                <span class="artist text-center">
+                    Obessed
+                </span>
+                <span class="title text-center">
+                    Emdi & Veronica Bravo
+                </span>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
             </div>
        
        
