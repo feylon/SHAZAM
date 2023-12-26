@@ -48,7 +48,7 @@
 </div>
 
     <div class="music_list w-100">
-        <div class="item d-flex align-items-center">
+        <div v-for="item in music_list" class="item d-flex align-items-center mt-2 justify-content-between ps-3">
             <div class="w-50 d-flex align-items-center ps-2 pt-3 pb-3  justify-content-start">
                 <i class="fas fa-circle-play me-3" title="Play"></i>
             <div class="music_details ">
@@ -61,6 +61,16 @@
 
             </div>
             </div>
+            <div>
+                <div class="add_playlist d-flex align-items-center justify-content-between w-100">
+<span>
+    <i class="fas fa-folder-plus me-5" title="Add playlist"></i>
+
+</span>
+                    <img src="./assets/Untitled1.png" alt="">
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -72,7 +82,29 @@
     </div>
    
 </template>
-<script setup></script>
+<script setup>
+import {ref} from "vue";
+let music_list = ref([
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+    {title:"xato",artist:"dshbvd hbdce"},
+
+])
+</script>
 <style scoped lang="scss">
 @import "song.scss";
 @import "./../node_modules//bootstrap/dist/css/bootstrap.min.css";

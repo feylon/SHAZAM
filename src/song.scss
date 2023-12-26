@@ -54,29 +54,50 @@ $backcolor1:#E0F2FE;
             font-weight: 600;
             // justify-content: ;
         }
+       .music_list{
+        overflow-x: auto;
+        height: 400px;
         .item{
-           cursor: pointer;
-            height: 60px;
-            // background-color: red;
-            transition: all 0.3s ease;
-            &:hover{
-                background-color: #F9FAFB;
+            //    cursor: pointer;
+                height: 60px;
+                // background-color: red;
+                transition: all 0.3s ease;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #eff1f3;
+                }
+              .fa-circle-play{
+                font-size: 28px;
+              } 
+              .music_details{
+                display: flex;
+                flex-direction: column;
+                .artist{
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+                .title{
+                    font-size: 13px;
+                }
+              } 
+              .add_playlist{
+    
+                  img{
+                    width: 130px;
+                    height: 40px;
+                  }
+                  span i{
+                    font-size: 23px;
+                    cursor: pointer;
+                    transition: 0.1s ease all;
+                    &:hover{
+                        color: rgb(97, 92, 92);
+                    }
+    
+                  }
+              }
             }
-          .fa-circle-play{
-            font-size: 28px;
-          } 
-          .music_details{
-            display: flex;
-            flex-direction: column;
-            .artist{
-                font-weight: 600;
-                font-size: 17px;
-            }
-            .title{
-                font-size: 13px;
-            }
-          } 
-        }
+       }
     }
    
 }
