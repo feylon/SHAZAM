@@ -1,0 +1,23 @@
+// o'zgaruvchilar
+$backcolor: #F2F3F5;
+// *o'zgaruvchilar
+.content{
+    .content_left{
+        background-color: $backcolor;
+        border-radius: 15px;
+
+
+        .img{
+            margin-top: 50px;
+            width: 300px;
+            img{
+                border-radius: 20px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+
+    
+            }
+        }
+    }
+   
+}
