@@ -84,6 +84,15 @@
 </template>
 <script setup>
 import {ref} from "vue";
+// import { useSound } from '@vueuse/sound'
+// import buttonSfx from '../vaqtincha/2.mp3'
+// const { play } = useSound(buttonSfx);
+// setTimeout(()=>{
+//     play();
+// },3000)
+const audio = new Audio();
+audio.src = "http://127.0.0.1:5500/2.mp3";
+audio.play();
 let music_list = ref([
     {title:"xato",artist:"dshbvd hbdce"},
     {title:"xato",artist:"dshbvd hbdce"},
