@@ -84,15 +84,28 @@
 </template>
 <script setup>
 import {ref} from "vue";
-// import { useSound } from '@vueuse/sound'
-// import buttonSfx from '../vaqtincha/2.mp3'
-// const { play } = useSound(buttonSfx);
-// setTimeout(()=>{
-//     play();
-// },3000)
-const audio = new Audio();
-audio.src = "http://127.0.0.1:5500/2.mp3";
+import {Howl, Howler} from 'howler';
+let url = "http://127.0.0.1:5500/2.mp3";
+// var sound = new Howl({
+//   src: ["http://127.0.0.1:5500/2.mp3"],
+//   autoplay: false,
+//   loop: true,
+//   html5:true,
+//   volume: 0.1,
+//   onend: function() {
+//     console.log('Finished!');
+//   }
+// });
+
+// sound.play();
+// sound.on('end', function(){
+//   console.log('Finished!');
+// });
+let audio = document.createElement("audio");
+audio.src = url;
 audio.play();
+console.log(audio)
+document.querySelector("body").append(audio)
 let music_list = ref([
     {title:"xato",artist:"dshbvd hbdce"},
     {title:"xato",artist:"dshbvd hbdce"},
