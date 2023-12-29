@@ -44,7 +44,7 @@ import {useStore} from "../Store";
 let route = useRouter();
 let store = useStore();
 
-let search = ref('salom')
+let search = ref('salom xayr')
 
 
 </script>

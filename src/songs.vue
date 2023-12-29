@@ -91,7 +91,10 @@ import {ref} from "vue";
 import {useStore} from "../Store";
 
 let store = useStore();
-console.log(store.songs)
+console.log(store.songs);
+let arr = store.songs.split(" ");
+arr = arr.join("%20")
+console.log(arr)
 let music_list = ref([
     {title:"xato",artist:"dshbvd hbdce"},
     {title:"xato",artist:"dshbvd hbdce"},
