@@ -25,7 +25,8 @@
 
 <div class="searchsection">
 
-  <input type="text" placeholder="Search for a song..."  class="search_song form-control mt-3 w-75 m-auto mt-3">
+  <input type="text" v-model="search" placeholder="Search for a song..."  class="search_song text-center form-control mt-3 w-75 m-auto mt-3">
+  <button @click="store.songs=search;route.push('/songs')" v-if="search" class="btn btn-outline-primary w-50 p-2 mt-4 m-auto d-block"><i class="fas fa-magnifying-glass"></i> Search ...  </button>
 </div>
 
 <div class="recent_section">
@@ -36,7 +37,17 @@
     </div>
   </div>
 </template>
-<script></script>
+<script setup>
+import {ref} from 'vue';
+import {useRouter} from "vue-router";
+import {useStore} from "../Store";
+let route = useRouter();
+let store = useStore();
+
+let search = ref('salom')
+
+
+</script>
 <style lang="scss">
 @import "home.scss";
 
