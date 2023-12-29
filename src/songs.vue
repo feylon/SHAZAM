@@ -89,12 +89,23 @@
 <script setup>
 import {ref} from "vue";
 import {useStore} from "../Store";
+import get_songs from "../backend/get";
 
 let store = useStore();
 console.log(store.songs);
 let arr = store.songs.split(" ");
 arr = arr.join("%20")
-console.log(arr)
+console.log(arr);
+
+
+
+// let data = await get_songs();
+// data = JSON.parse(data) 
+// console.log(data)
+
+
+
+
 let music_list = ref([
     {title:"xato",artist:"dshbvd hbdce"},
     {title:"xato",artist:"dshbvd hbdce"},

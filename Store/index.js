@@ -8,6 +8,7 @@ export const useStore = defineStore('storeId', {
       isAdmin: true,
       items: [],
       hasChanged: true,
+      songs:"Calm down"
     }
   },
 });
